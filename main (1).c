@@ -7,15 +7,15 @@ Welcome to GDB Online.
 
 *******************************************************************************/
 #include <stdio.h>
+
 int main()
 {
-    int i,n,sum=0;
-    printf("value of n is :");
-    scanf("%d",&n);
-    for (i=1;i<=n;i++)
-    {
-        printf("%d ",i);
-        sum=sum+i;
-    }
-    printf("\nsum of %d number is :%d\n",n,sum);
+    float area ,perimeter,pie=3.14,radius=12;
+    area=pie*(radius*radius);
+    perimeter=2*(pie*radius);
+    printf("perimeter of rectangle is %f",perimeter);
+    printf("\narea of rectange is %f",area);
+    
+
+    return 0;
 }
