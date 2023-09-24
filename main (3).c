@@ -7,17 +7,18 @@ Welcome to GDB Online.
 
 *******************************************************************************/
 #include <stdio.h>
+
 int main()
 {
-    int i,n,sum=0,average;
-    printf("value of n is :");
-    scanf("%d",&n);
-    for (i=1;i<=n;i++)
-    {
-        printf("%d ",i);
-        sum=sum+i;
-        average=sum/n;
-    }
-    printf("\nsum of %d number is :%d\n",n,sum);
-    printf("\naverage is %d\n:",average);
+    int a,b,sum,average;
+    scanf("%d\n",&a);
+    scanf("%d\n",&b);
+    printf("value of a is %d\n",a);
+    printf("\nvalue of b is%d\n ",b);
+    
+    sum=a+b;
+    average=sum/2;
+    printf("sum of aand b is %d\n",sum);
+    printf("average of a and b is %d\n",average);
+    return 0;
 }
