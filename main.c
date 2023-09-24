@@ -1,26 +1,21 @@
-/******************************************************************************
-
-Welcome to GDB Online.
-  GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, 
-  C#, OCaml, VB, Perl, Swift, Prolog, Javascript, Pascal, COBOL, HTML, CSS, JS
-  Code, Compile, Run and Debug online from anywhere in world.
-
-*******************************************************************************/
 #include <stdio.h>
 
-int main()
+void main()
 {
-    int sum=0,num,i;
-    printf("enter the value of num :");
-    scanf("%d",&num);
-    for(i=1;i<=num;i++)
-    {
-        sum=i+sum;
-        if(sum==55)
-        {
-            printf("%d",sum);
-        }
-    }
-
-    return 0;
-}
+   int i,j,n,p,q;
+   printf("Input number of rows : ");
+   scanf("%d",&n);
+   for(i=1;i<=n;i++)
+   {
+     if(i%2==0)
+     { p=1;q=0;}
+     else
+     { p=0;q=1;}
+      for(j=1;j<=i;j++)
+	 if(j%2==0)
+	    printf("%d",p);
+	 else
+	    printf("%d",q);
+     printf("\n");
+   }
+} 
