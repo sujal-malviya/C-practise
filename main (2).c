@@ -10,13 +10,12 @@ Welcome to GDB Online.
 
 int main()
 {
-    int num,i;
-    printf("enter the value of num :");
-    scanf("%d",&num);
-    for(i=1;i<=num;i++)
-    {
-        printf("%d\n",i);
-    }
-
+    int days=1329,weeks,years;
+    years=days/365;
+    weeks=(days%365)/7;
+    days=days-((years*365)+(weeks*7));
+    printf("years:%d\n",years);
+    printf("weeks:%d\n",weeks);
+    printf("days:%d\n",days);
     return 0;
 }
