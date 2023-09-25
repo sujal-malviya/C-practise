@@ -8,16 +8,20 @@ Welcome to GDB Online.
 *******************************************************************************/
 #include <stdio.h>
 
-int main()
+int main()//input number get reverse number;
 {
-    int i,n;
-    int t=15;
-    printf("enter the value of n :");
-    scanf("%d",&n);
-    for(i=1;i<=n;i++)
+    int a[10],i,num,r=0,n;
+    printf("enter teh value :");
+    scanf("%d ",&n);
+    for(i=0;i<n;i++)
     {
-        printf("\n%d x %d = %d\n",t,i,t*i);
+        printf("\nelement is ");
+        scanf("%d ",&a[i]);
     }
+    for(i=n-1;i>=0;i--)
+    {
+        printf("%d ",a[i]);
+    }
+
+    return 0;
 }
-
-
