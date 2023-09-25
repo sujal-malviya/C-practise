@@ -10,13 +10,19 @@ Welcome to GDB Online.
 
 int main()
 {
-    int i,n;
-    printf("enter the value of n :");
-    scanf("%d",&n);
-    for(i=1;i<=n;i++)
+    int a[10],i;
+    for(i=0;i<10;i++)
     {
-        printf("\ncube of %d is %d\n",i,i*i*i);
+        scanf("%d ",&a[i]);
     }
+    for(i=0;i<10;i++){
+        if(i%2==0||i%2!=0)
+        {
+            printf("\nelements of %d : %d\n",i,a[i]);
+            
+        }
+        
+    }
+
+    return 0;
 }
-
-
