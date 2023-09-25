@@ -8,18 +8,21 @@ Welcome to GDB Online.
 *******************************************************************************/
 #include <stdio.h>
 
-int main()
+int main()//input number get reverse number;
 {
-    int i,n,j;
-    printf("enter the value of n :");
-    scanf("%d",&n);
-    for(i=1;i<=n;i++)
+    int a[10],i,n,sum=0;
+    printf("enter the value :");
+    scanf("%d ",&n);
+    for(i=0;i<n;i++)
     {
-        for(j=1;j<=i;j++)
-        {
-            printf("%d x %d = %d\n",j,i,j*i); 
-        }
+        printf("\nelement is ");
+        scanf("%d ",&a[i]);//input array elements;
     }
+    for(i=0;i<n;i++)
+    {
+        sum=sum+a[i];
+        printf("%d ",a[i]);//print array;
+    }printf("\nsum of array is %d ",sum);//sum of array;
+
+    return 0;
 }
-
-
