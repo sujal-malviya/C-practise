@@ -1,15 +1,37 @@
 #include <stdio.h>
-
 int main()
 {
-    int i,n,j;
-    printf("enter the value of n :");
-    scanf("%d",&n);
-    for(i=1;i<=n;i++)
+    int arr1[100], n,ctr=0;
+    int i, j, k;
+       printf("\n\nPrint all unique elements of an array:\n");
+       printf("------------------------------------------\n");	
+       printf("Input the number of elements to be stored in the array: ");
+       scanf("%d",&n);
+       printf("Input %d elements in the array :\n",n);
+       for(i=0;i<n;i++)
+            {
+	      printf("element - %d : ",i);
+	      scanf("%d",&arr1[i]);
+	    }
+    printf("\nThe unique elements found in the array are: \n");
+    for(i=0; i<n; i++)
     {
-        for(j=1;j<=n-1;j++)
+        ctr=0;
+        for(j=0,k=n; j<k+1; j++)
         {
-            printf("*");
-        }printf("\n");
+            /*Increment the counter when the search value is duplicate.*/
+            if (i!=j)
+            {
+		       if(arr1[i]==arr1[j])
+              {
+                 ctr++;
+               }
+             }
+        }
+       if(ctr==0)
+        {
+          printf("%d ",arr1[i]);
+        }
     }
+       printf("\n\n");
 }
