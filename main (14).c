@@ -7,19 +7,21 @@ Welcome to GDB Online.
 
 *******************************************************************************/
 #include <stdio.h>
-
+#include<math.h>
+int power(int a,int b);
 int main()
 {
-    int i, j,n,k=1;
-    printf("enter the  value of n:");
-    scanf("%d",&n);
-    for(i=1;i<=n;i++)
-    {
-        for(j=1;j<=i;j++)
-        {
-            printf("%d ",k++);
-        }printf("\n");
-    }
-
+    int a,b;
+    printf(" value of a :");
+    scanf("%d",&a);
+    printf("value of  b :");
+    scanf("%d",&b);
+    
+    int s =power(a,b);
+    printf("\npower is %d ",s);
+    
     return 0;
+}
+int power(int x,int y){
+    return x*y;
 }
