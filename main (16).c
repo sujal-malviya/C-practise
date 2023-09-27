@@ -7,17 +7,21 @@ Welcome to GDB Online.
 
 *******************************************************************************/
 #include <stdio.h>
+int sum(int n);
 
 int main()
 {
-    int i, sum=0,n;
-    printf("enter the  value of n:");
-    scanf("%d",&n);
-    for(i=1;i<=n;i++)
-    {
-        printf("%d ",2*i);
-        sum+=2*i;
-    }printf("\nsum of %d even numbers is %d\n",n,sum);
-
+    printf("sum is %d ",sum(10));
     return 0;
 }
+int sum(int n)
+{
+    if(n==1)
+    {
+        return 1;
+    }
+    int smn1=sum(n-1);//sum from 1 to n-1;
+    int smn2 =smn1+n;
+    return smn2;
+}
+//sum of n natural number using recursion;
