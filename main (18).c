@@ -7,22 +7,17 @@ Welcome to GDB Online.
 
 *******************************************************************************/
 #include <stdio.h>
+float convertTemp(float celcius);
 
 int main()
 {
-    int i, sum=0,n,t=9;
-    printf("enter the  value of n:");
-    scanf("%d",&n);
-    for(i=1;i<=n;i++)
-    {
-         sum+=t;
-        printf("%d ",t);
-        t=t*10+9;
-
-        
-       
-        
-    }printf("\nsum of %d numbers is %d\n ",n,sum);
-
+    float fah = convertTemp(0);
+    printf("temp is %f",fah);
     return 0;
 }
+float convertTemp(float celcius)
+{
+    float fah = celcius * (9/5) + 32;
+    return fah;
+}
+//convert fahrenhiet to celcius;
