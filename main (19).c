@@ -7,18 +7,20 @@ Welcome to GDB Online.
 
 *******************************************************************************/
 #include <stdio.h>
+float percentage(float sc,float mth,float sns);
 
 int main()
 {
-    int i, sum=0,n;
-    printf("enter the  value of n:");
-    scanf("%d",&n);
-    for(i=1;i<=n;i++)
-    {
-       printf("%d\t",i*i);
-       sum+=i*i;
-       
-    }printf("\nsquare of %d integers is %d\n ",n,sum);
-
+    float sc =98;
+    float mth =57;
+    float sns =89;
+    
+    printf("percentage is %f", percentage(sc,mth,sns));
     return 0;
 }
+float percentage(float sc,float mth,float sns)
+{
+    float per = ((sc+mth+sns)/3);
+    return per;
+}
+//percentage;
