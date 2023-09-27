@@ -7,17 +7,21 @@ Welcome to GDB Online.
 
 *******************************************************************************/
 #include <stdio.h>
+int sum(int n);
 
 int main()
 {
-    float i, sum=0,n,t=1;
-    printf("enter the  value of n:");
-    scanf("%f",&n);
-    for(i=1;i<=n;i++)
-    {
-        printf("%f ",t*1/i); 
-        sum+=t*1/i;
-    }printf("\nsum of %f series is %f\n",n,sum);
-
+    printf("sum is %d ",sum(5));
     return 0;
 }
+int sum(int n)
+{
+    if(n==1)
+    {
+        return 1;
+    }
+    int smn1=sum(n-1);//sum from 1 to n-1;
+    int smn2 =smn1*n;
+    return smn2;
+}
+//factorial of n natural number using recursion;
