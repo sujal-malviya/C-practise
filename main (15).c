@@ -7,16 +7,20 @@ Welcome to GDB Online.
 
 *******************************************************************************/
 #include <stdio.h>
-
+ void printHW(int count);//function declaration;
+ 
 int main()
 {
-    int i, t=1,n;
-    printf("enter the  value of n:");
-    scanf("%d",&n);
-    for(i=1;i<=n;i++)
-    {
-        t=i*t;
-    }printf("%d ",t);
-
+    printHW(5);//function call--
     return 0;
+}
+//recursive function--
+void printHW(int count)//function def...
+{
+    if(count==0)
+    {
+        return;
+    }
+    printf("\nhello world");
+    printHW(count-1);
 }
