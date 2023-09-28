@@ -1,28 +1,19 @@
-/******************************************************************************
-
-Welcome to GDB Online.
-  GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, 
-  C#, OCaml, VB, Perl, Swift, Prolog, Javascript, Pascal, COBOL, HTML, CSS, JS
-  Code, Compile, Run and Debug online from anywhere in world.
-
-*******************************************************************************/
-#include <stdio.h>
-
+#include<stdio.h>
 int main()
 {
-    int i ,k,j;
-    for(i=5;i>=1;i--)//it is used for row operation;
-    {
-        for(j=i;j<5;j++)//it is used for space operation;
-        {
-            printf(" ");
-        }
-        for(k=1;k<=i;k++)//it is used for column operation;
-        {
-            printf("*");//will print asterisk;
-        }
-        printf("\n");//move to new line;
-    }
+    float price[3];
+    float sum ;
+    printf("price of maggi :");
+    scanf("%f",&price[0]);
+    
+     printf("price of cookie :");
+    scanf("%f",&price[1]);
+    
+     printf("price of donute :");
+    scanf("%f",&price[2]);
+    
+    printf("\nprice of maggi = %f  \nprice of cookie = %f  \nprice of donute = %f",price[0]=price[0]+(0.18*price[0]),price[1]=price[1]+(price[1]*0.18),price[2]=price[2]+price[2]*0.18);
 
-    return 0;
-}
+    sum = price[0]+price[1]+price[2];
+    printf("\n%f",sum);
+}//array operation on each index;
