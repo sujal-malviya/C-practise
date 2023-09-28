@@ -7,21 +7,15 @@ Welcome to GDB Online.
 
 *******************************************************************************/
 #include <stdio.h>
-
 int main()
 {
-    int i, a=0,n,b=1,c;
-    printf("enter the  value of n:");
-    scanf("%d",&n);
-    for(i=0;i<=n;i++)
-    {
-       c=a+b;
-       printf("%5d",c);
-       a=b;
-       b=c;
-       
-       
-    }printf("\n");
-
+    int x = 10;
+    int *ptr;
+    int **pptr;
+    ptr = &x;
+    pptr =&ptr;
+    printf("\nvalue of x is %d",x);//will print value of x;
+    printf("\nvalue of *ptr is %d",*ptr);//will print value of x with help of address of x;
+    printf("\nvalue of **pptr is %d",**pptr);//will print value of x by pointing to pointer 1 thann poin to x's address;
     return 0;
-}
+}//pointer to pointer concept;
