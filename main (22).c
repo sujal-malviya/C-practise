@@ -7,18 +7,21 @@ Welcome to GDB Online.
 
 *******************************************************************************/
 #include <stdio.h>
+void dowrk(int a, int b ,int *sum,int *product,int*avg);
 
 int main()
 {
-    int i ,j;
-    for(i=5;i>=1;i--)
-    {
-        for(j=1;j<=i;j++)
-        {
-            printf("*");
-        }
-        printf("\n");
-    }
-
+    int a= 10;
+    int b = 2;
+    int sum ,product,avg;
+    
+    dowrk(a,b,&sum,&product,&avg);
+    printf("sum = %d product = %d avg = %d",sum,product,avg);
     return 0;
 }
+void dowrk(int a, int b ,int *sum,int *product,int*avg)
+{
+    *sum =a+b;
+    *product = a*b;
+    *avg = (a+b)/2;
+}//operation usingn pointer;
