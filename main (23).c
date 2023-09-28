@@ -1,28 +1,15 @@
-/******************************************************************************
-
-Welcome to GDB Online.
-  GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, 
-  C#, OCaml, VB, Perl, Swift, Prolog, Javascript, Pascal, COBOL, HTML, CSS, JS
-  Code, Compile, Run and Debug online from anywhere in world.
-
-*******************************************************************************/
-#include <stdio.h>
-
+#include<stdio.h>
 int main()
 {
-    int i ,k,j;
-    for(i=1;i<=5;i++)//it is used for row operation;
-    {
-        for(j=i;j<5;j++)//it is used for space operation;
-        {
-            printf(" ");
-        }
-        for(k=1;k<=i;k++)//it is used for column operation;
-        {
-            printf("*");//will print asterisk;
-        }
-        printf("\n");//move to new line;
-    }
-
-    return 0;
-}
+    int marks[3];
+    printf("marks of phy :");
+    scanf("%d",&marks[0]);
+    
+     printf("marks of chem :");
+    scanf("%d",&marks[1]);
+    
+     printf("marks of math :");
+    scanf("%d",&marks[2]);
+    
+    printf("\nmarks of phy = %d  \nmarks of chem = %d  \nmarks of math = %d",marks[0],marks[1],marks[2]);
+}//array operation on each index;
