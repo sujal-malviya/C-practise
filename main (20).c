@@ -7,20 +7,19 @@ Welcome to GDB Online.
 
 *******************************************************************************/
 #include <stdio.h>
-
 int main()
 {
-    int i, sum=0,n,t=1;
-    printf("enter the  value of n:");
-    scanf("%d",&n);
-    for(i=1;i<=n;i++)
-    {
-       sum+=t;
-       printf("%d ",t);
-       t=t*10+1;
-       
-       
-    }printf("\nsum of %d integers series is %d\n ",n,sum);
-
+    int x;
+    int *ptr;
+    ptr = &x;//ptr is pointer holds address of x;
+    *ptr =0;//says value at x is 0;
+    printf(" \nvalue of x is %d",x);
+    printf(" \nvalue of *ptr is %d",*ptr);
+    *ptr += 5;
+    printf(" \nvalue oof x is %d",x);
+    printf("\nvalue of *ptr is %d",*ptr);
+    (*ptr)++ ;
+    printf("\nvalue of x is %d",x);
+    printf("\nvalue of *ptr is %d",*ptr);
     return 0;
-}
+}//pointer concept;
