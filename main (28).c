@@ -7,21 +7,13 @@ Welcome to GDB Online.
 
 *******************************************************************************/
 #include <stdio.h>
-
 int main()
 {
-    char i ,j,count=65;//it will print by the help of aski value ;
-    //aski value of a is 65 and of e is 69 by the help of that output came;
-    for(i=65;i<=69;i++)//it is used for row operation;
-    {
-        for(j=65;j<=i;j++)//it is used for space operation;
-        {
-            printf("%c",count);//count variable is used to increment the value after 1 by one;
-            ++count;//in each iteration;
-        }
-    
-        printf("\n");//move to new line;
-    }
+    int arr[]={1,2,3,4,5,6};
+    printf("%d",*arr+2);//it is giving value of arr at 2nd index;
+    printf("\n%d",*arr+5);//it is giving value of arr at 5th index;
+    printf("\n%d",*arr+9);//the 6th index dosen't exist so it will give us error.
 
-    return 0;//this is program of square of asterisk with space inside it;
+    return 0;
 }
+
