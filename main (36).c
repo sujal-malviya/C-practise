@@ -7,19 +7,20 @@ Welcome to GDB Online.
 
 *******************************************************************************/
 #include <stdio.h>
-//tribonaaci series - in this sum of 3 value will give output value;
+
 int main()
 {
-    int i,n,a=0,b=1,c=2,d;
-    printf("input terms :");
-    scanf("%d ",&n);
-    for(i=1;i<=n;i++)
-    {
-        printf("%d ",a);// value of a will be print.
-        d=a+b+c;//in c value will be store of add operation.
-        a=b;//a will take value of b;
-        b=c;//b will take value of c;
-        c=d;
+    char name[100];
+    char ch;
+    int i =0;
+    
+    while(ch != '\n'){
+        scanf("%c",&ch);
+        name[i]=ch;
+        i++;
     }
-    return 0;//in output c will be a+b;
+    name[i]='\0';
+    puts(name);
+    
+    return 0;
 }
