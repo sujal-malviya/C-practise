@@ -7,22 +7,15 @@ Welcome to GDB Online.
 
 *******************************************************************************/
 #include <stdio.h>
-
 int main()
 {
-    int i,j,k,count=1;
-    for(i=1;i<=5;i++)//outer loop,row operation; 
-    {
-        for(j=5;j>i;j--)//inner loop,left-side spaces covering;
-    {
-        printf(" ");
-    }
-    for(k=1;k<=i;k++)//inner loop,*,middle space + right side spaces;
-    {
-        printf("%d ",count);
-        count++;
-    }
-    printf("\n");//new line;
-    }
+    char Firstname[5];
+    char Lastname[7];
+    scanf("%s",&Firstname);
+    printf("firstname : %s",Firstname);
+    scanf("%s",&Lastname);
+    printf("lastname : %s",Lastname);
+   printf("\n%s ",Firstname);
     return 0;
 }
+//print name using string;
