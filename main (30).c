@@ -7,21 +7,21 @@ Welcome to GDB Online.
 
 *******************************************************************************/
 #include <stdio.h>
-
 int main()
 {
-    char i ,j;//it will print by the help of aski value ;
-    //aski value of a is 65 and of e is 69 by the help of that output came;
-    for(i=65;i<=69;i++)//it is used for row operation;
-    {
-        for(j=65;j<=i;j++)//it is used for space operation;
-        {
-            printf("%c",j);//count variable is used to increment the value after 1 by one;
-            
-        }
+    int n,i;
+    printf("enter the value of n(n>2 :");
+    scanf("%d",&n);
     
-        printf("\n");//move to new line;
+    int fib[n];
+    fib[0] = 0;
+    fib[1] = 1;
+    for(i=2;i<n;i++)
+    {
+        fib[i]=fib[i-1]+fib[i-2];
+        printf("%d\t",fib[i]);
     }
-
-    return 0;//this is program of square of asterisk with space inside it;
+    printf("\n");
+    return 0;
 }
+//fibonaacci series---
