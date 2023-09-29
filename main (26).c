@@ -7,20 +7,23 @@ Welcome to GDB Online.
 
 *******************************************************************************/
 #include <stdio.h>
-
+int countOdd(int arr[],int n);
 int main()
 {
-    int i ,j,count=1;
-    for(i=1;i<=4;i++)//it is used for row operation;
-    {
-        for(j=1;j<=i;j++)//it is used for space operation;
-        {
-            printf("%d",count);//count variable is used to increment the value after 1 ;
-            ++count;//in each iteration;
-        }
-    
-        printf("\n");//move to new line;
-    }
+    int arr[]={1,2,3,4,5,6};
+    printf("%d",countOdd(arr,6));
 
-    return 0;//this is program of square of asterisk with space inside it;
+    return 0;
 }
+int countOdd(int arr[],int n)
+{
+    int count = 0;
+    for(int i=0;i<n;i++)
+    {
+        if(arr[i]%2!=0)
+        {
+            count++;
+        }
+    }
+    return count;
+}//to count odd numbers from array;
