@@ -7,21 +7,21 @@ Welcome to GDB Online.
 
 *******************************************************************************/
 #include <stdio.h>
-
+void printstr(char a[]);
 int main()
 {
-    int i,j,k;
-    for(i=1;i<=5;i++)//outer loop,row operation; 
-    {
-        for(j=5;j>i;j--)//inner loop,left-side spaces covering;
-    {
-        printf(" ");
-    }
-    for(k=1;k<=i;k++)//inner loop,*,middle space + right side spaces;
-    {
-        printf("%d ",i);
-    }
-    printf("\n");//new line;
-    }
+    
+    char firstname[]="sujal";
+    char lastname[]="malviya";
+    
+    printstr(firstname);
+    printstr(lastname);
     return 0;
 }
+void printstr(char a[]){
+    for(int i=0;a[i]!='\0' ;i++)
+    {
+        printf("%c",a[i]);
+    }
+    printf("\n");
+}//print string with the help of function;
